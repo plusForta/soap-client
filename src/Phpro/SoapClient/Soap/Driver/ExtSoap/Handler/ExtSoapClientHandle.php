@@ -40,7 +40,7 @@ class ExtSoapClientHandle implements HandlerInterface
             (string) $this->client->__getLastRequestHeaders(),
             (string) $this->client->__getLastRequest(),
             (string) $this->client->__getLastResponseHeaders(),
-            (string) $this->client->__getLastResponse()
+            (string) $response
         );
 
         return new SoapResponse($response);
